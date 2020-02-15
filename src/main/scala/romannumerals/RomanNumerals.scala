@@ -2,8 +2,13 @@ package romannumerals
 
 object RomanNumerals {
   def convert(number: Int): String = {
-    val results: Array[String] = Array("I", "II", "III", "IV")
-    results(number - 1)
+    val results = Map(
+      1->"I",
+      2->"II",
+      3->"III",
+      4->"IV"
+    )
+    results(number)
   }
 
 }
