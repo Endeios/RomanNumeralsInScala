@@ -15,10 +15,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build publisable jar
+      - name: Build publishable jar
         run: sbt publish
       - name: Upload package
         uses: actions/upload-artifact@v1
         with:
           name: RomanNumerals
-          path: /home/runner/work/RomanNumerals/RomanNumerals/target/scala-2.13
+          path: /home/runner/work/RomanNumeralsInScala/RomanNumeralsInScala/target/scala-2.13
