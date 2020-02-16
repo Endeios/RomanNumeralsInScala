@@ -6,8 +6,7 @@ object RomanNumerals {
   val romanNumbers: List[RomanNumber] = List[RomanNumber](
     M, CM, D, CD, C, XC, L, XL, X, IX, V, IV, I
   )
-  var results: Map[Int, String] = Map[Int, String]()
-  romanNumbers.foreach(rn => results += (rn.value -> rn.symbol))
+  val results: Map[Int, String] = romanNumbers.map(rn => (rn.value -> rn.symbol)).toMap
 
   def convert(number: Int): String = {
 
