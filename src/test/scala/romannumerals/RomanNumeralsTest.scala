@@ -47,7 +47,11 @@ class RomanNumeralsTest extends UnitTest{
     (80,"LXXX"),
     (90,"XC"),
     (99,"XCIX"),
-   (100,"C"),
+    (100,"C"),
+    (846,"DCCCXLVI"),
+   (1999,"MCMXCIX"),
+   (2008,"MMVIII" ),
+   (2020,"MMXX"   ),
   ).map(t=>Case(t._1,t._2))
 
   cases.foreach(useCase=>{
